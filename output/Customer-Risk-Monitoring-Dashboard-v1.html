@@ -140,6 +140,7 @@ tr.zombie-row:hover { background: #EEEEEE; opacity: 1; }
   </div>
   <div class="summary-card">
     <h3>Por Segmento</h3>
+    <div class="summary-item"><span>En implementacion</span><strong>82</strong></div>
     <div class="summary-item"><span>Mature (&gt;180d)</span><strong>147</strong></div>
     <div class="summary-item"><span>Unknown (sin go-live)</span><strong>0</strong></div>
     <div class="summary-item"><span>Adopting (60-180d)</span><strong>23</strong></div>
@@ -193,10 +194,10 @@ tr.zombie-row:hover { background: #EEEEEE; opacity: 1; }
       <div class="filter-group">
         <span class="filter-title">Segmento</span>
         <label class="toggle-all"><input type="checkbox" checked onchange="toggleAll('fSegment', this.checked)"> Todos</label>
+        <label><input type="checkbox" name="fSegment" value="En implementacion" onchange="onFilterChange('fSegment')"> En implementacion</label>
         <label><input type="checkbox" name="fSegment" value="New" onchange="onFilterChange('fSegment')"> New</label>
         <label><input type="checkbox" name="fSegment" value="Adopting" onchange="onFilterChange('fSegment')"> Adopting</label>
         <label><input type="checkbox" name="fSegment" value="Mature" onchange="onFilterChange('fSegment')"> Mature</label>
-        <label><input type="checkbox" name="fSegment" value="Unknown" onchange="onFilterChange('fSegment')"> Unknown</label>
       </div>
       <div class="filter-group">
         <span class="filter-title">Team</span>
