@@ -98,7 +98,7 @@ tbody td{padding:8px 10px;white-space:nowrap;vertical-align:middle}
 <div class="kpi-grid">
 <div class="kpi-card"><div class="kpi-value" style="color:var(--accent)">$644K</div><div class="kpi-label">Total KPay Volume</div><div class="kpi-sub">Last 30 days (post go-live accounts)</div></div>
 <div class="kpi-card"><div class="kpi-value" style="color:#1d4ed8">$2.02M</div><div class="kpi-label">Total KPay 2026 Go Lives</div><div class="kpi-sub">All-time KPay from accounts live in 2026</div></div>
-<div class="kpi-card"><div class="kpi-value" style="color:#059669">40%</div><div class="kpi-label">Avg Payments Usage</div><div class="kpi-sub">KPay / Total Sales (post go-live)</div></div>
+<div class="kpi-card"><div class="kpi-value" style="color:#059669">35%</div><div class="kpi-label">Avg Payments Usage</div><div class="kpi-sub">KPay / Total Sales (post go-live)</div></div>
 <div class="kpi-card"><div class="kpi-value" style="color:#1d4ed8">13</div><div class="kpi-label">Accounts Live</div><div class="kpi-sub">Komet Core + eSuite with payments enabled</div></div>
 <div class="kpi-card"><div class="kpi-value" style="color:#d97706">3</div><div class="kpi-label">In Training Pipeline</div><div class="kpi-sub">Nova Packing, Heirloom, Lartisan Roses &middot; $71K pipeline</div></div>
 <div class="kpi-card"><div class="kpi-value" style="color:#ef4444">4</div><div class="kpi-label">Adhoc / At Risk</div><div class="kpi-sub">Interflor, Del Tropico, Tessa, Natural Flowers</div></div>
@@ -226,54 +226,6 @@ tbody td{padding:8px 10px;white-space:nowrap;vertical-align:middle}
 </tbody>
 </table></div>
 <div style="padding:10px 24px;font-size:.65rem;color:var(--muted);border-top:1px solid var(--border)"><strong>KPay column logic:</strong> Each account's KPay data is aligned to its go-live month. "KPay GL Month" = the month they went live, "KPay +1 GL" = 1 month after, etc. The number of populated columns depends on how long the account has been live. &mdash; = no data available for that period. Source: Snowflake (live query, April 23, 2026). Pay Usage uses rolling 30d. Values &gt;100% indicate the account is collecting payments from prior months' invoices.</div>
-</div>
-
-<!-- eSUITE WITH PAYMENTS ENABLED -->
-<div class="section-title">eSuite with Payments Enabled</div>
-
-<div class="table-card">
-<div class="table-header"><h2>eSuite Accounts &mdash; KPay Status</h2><div style="font-size:.72rem;color:var(--muted)">eSuite growers with payments eligibility &middot; Source: Snowflake</div></div>
-<div class="table-wrap"><table>
-<thead><tr>
-<th>Account</th><th>Type</th><th>Lead</th><th>Go-Live</th>
-<th style="text-align:center">Completion</th>
-<th>KPay Status</th>
-<th>Merchant Created</th>
-<th>First Tx</th>
-<th style="text-align:right">GL Mo Sales</th>
-<th style="text-align:right">+1 GL Sales</th>
-<th style="text-align:right">+2 GL Sales</th>
-</tr></thead>
-<tbody>
-<tr>
-<td style="font-weight:600">Pacifica Produce Farms LLC</td>
-<td><span class="badge badge-esuite">eSuite Grower</span></td>
-<td>Daniel Prada</td>
-<td>Feb 13</td>
-<td style="text-align:center"><div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" style="width:97%"></div></div><span class="progress-label">97%</span></div></td>
-<td><span class="badge badge-yellow">Eligible &mdash; Onboarding Incomplete</span></td>
-<td>Jan 30, 2026</td>
-<td style="color:var(--muted)">&mdash;</td>
-<td style="text-align:right;font-weight:600">$209</td>
-<td style="text-align:right">$7,167</td>
-<td style="text-align:right">$5,592</td>
-</tr>
-<tr>
-<td style="font-weight:600">Quimflowers</td>
-<td><span class="badge badge-esuite">eSuite Grower</span></td>
-<td>Catleya Almeida</td>
-<td>Apr 2</td>
-<td style="text-align:center"><div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div><span class="progress-label">100%</span></div></td>
-<td><span class="badge badge-yellow">Eligible &mdash; Not Onboarded</span></td>
-<td style="color:var(--muted)">&mdash;</td>
-<td style="color:var(--muted)">&mdash;</td>
-<td style="text-align:right;color:var(--muted)">&mdash;</td>
-<td style="text-align:right;color:var(--muted)">&mdash;</td>
-<td style="text-align:right;color:var(--muted)">&mdash;</td>
-</tr>
-</tbody>
-</table></div>
-<div style="padding:12px 24px;font-size:.75rem;color:var(--muted);border-top:1px solid var(--border)">Note: Expobloom and Gypso are not eligible for KPay (their clients do not accept cards).</div>
 </div>
 
 <!-- IN TRAINING PIPELINE -->
@@ -456,7 +408,7 @@ tbody td{padding:8px 10px;white-space:nowrap;vertical-align:middle}
 
 </div>
 
-<div class="data-note" style="margin-top:0">No ORA record found in Salesforce for: New England Wholesale, Adesse LLC, Universal Flower Service (IKEBANA), Pacifica Produce Farms, Zeidler Floral, Riverside, FGS MIA, Nova Packing, JFS Wholesale. (JFS go-live hoy 23 Apr — datos KPay disponibles próxima semana.)</div>
+<div class="data-note" style="margin-top:0">No ORA record found in Salesforce for: New England Wholesale, Adesse LLC, Universal Flower Service (IKEBANA), Pacifica Produce Farms, Zeidler Floral, Riverside, FGS MIA, Nova Packing, JFS Wholesale.</div>
 
 <!-- NOT STARTED -->
 <div class="section-title">Not Started &mdash; Upcoming</div>
